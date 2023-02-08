@@ -12,7 +12,6 @@ public class MainActivity extends AppCompatActivity {
 
     ListView idListaValores;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
 
     public class MyAdapter extends BaseAdapter {
 
