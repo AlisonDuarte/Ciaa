@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="200dp"
+    android:layout_height="250dp"
+    android:background="#EFF4F4"
     android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-
-        >
+        android:orientation="horizontal">
 
 
         <ImageView
-            android:layout_width="200dp"
-            android:layout_height="150dp"
-            android:src="@drawable/rafting"
-
-            />
+            android:layout_width="150dp"
+            android:layout_height="230dp"
+            android:layout_margin="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/rafiting" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:orientation="vertical">
 
 
@@ -30,19 +30,18 @@
                 android:layout_height="50dp"
                 android:text="Rafting"
                 android:textColor="#2196F3"
-                android:textSize="30dp" />
+                android:textSize="30dp"
+                android:textStyle="bold" />
 
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="descrição" />
+                android:text="Aqui é a descrição do esporte, onde temos que enrolar muito para saber o tamanho do espaço." />
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-
-                >
+                android:layout_height="match_parent">
 
 
                 <RatingBar
@@ -62,8 +61,10 @@
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_baseline_favorite"
 
+
                     />
             </LinearLayout>
+
 
         </LinearLayout>
 
@@ -71,3 +72,4 @@
 
 
 </LinearLayout>
+
