@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+        protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         idListaValores = findViewById(R.id.idListaValores);
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public int getCount() {
-            return 0;
+            return imagem.length;
         }
 
         @Override
@@ -55,25 +55,26 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public View getView(int i, View view, ViewGroup viewGroup) {
-            ImageView idimagem;
+            ImageView idImagem;
             TextView idtitulo, iddescricao, idavaliacao;
 
             //ADAPTADOR LIGANDO AO MODELO
 
+            //View v = getLayoutInflater().inflate(R.layout.modelo_juntos, null);
             View v = getLayoutInflater().inflate(R.layout.modelo_juntos, null);
 
             //APRESENTANDO AS VARIAVEIS DO JAVA PARA O XML
-            imagem = v.findViewById(R.id.idimagem);
-            titulo = v.findViewById(R.id.idtitulo);
-            descricao = v.findViewById(R.id.iddescricao);
-            avaliacao = v.findViewById(R.id.idavaliacao);
+            idImagem = v.findViewById(R.id.idimagem);
+            idtitulo = v.findViewById(R.id.idtitulo);
+            iddescricao = v.findViewById(R.id.iddescricao);
+            idavaliacao = v.findViewById(R.id.idavaliacao);
 
 
             //inserindo valores nas variaveis
-            titulo.setText(titulo[i]);
-            descricao.setText(descricao[i]);
-            imagem.setImageResource(imagem[i]);
-            avaliacao.setText(avaliacao[i]);
+            idtitulo.setText(titulo[i]);
+            iddescricao.setText(descricao[i]);
+            idImagem.setImageResource(imagem[i]);
+            idavaliacao.setText(avaliacao[i]);
             return v;
         }
     }
